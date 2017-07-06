@@ -21,7 +21,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV OPENJDK_VERSION 8
 #ENV GAE_IMAGE_NAME ${project.artifactId}
 ENV GAE_IMAGE_NAME openjdk-parent
-ENV GAE_IMAGE_LABEL ${docker.tag.long}
+#ENV GAE_IMAGE_LABEL ${docker.tag.long}
+ENV GAE_IMAGE_LABEL 8.06072017
 
 # Update debian
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list \
