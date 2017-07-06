@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM ${docker.appengine.image}
+#FROM ${docker.appengine.image}
+FROM gcr.io/cloud-builders/docker
 ENV DEBIAN_FRONTEND noninteractive
 
 # Create env vars to identify image
