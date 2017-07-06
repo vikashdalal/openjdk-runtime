@@ -17,7 +17,8 @@ FROM gcr.io/cloud-builders/docker
 ENV DEBIAN_FRONTEND noninteractive
 
 # Create env vars to identify image
-ENV OPENJDK_VERSION ${openjdk.version}
+#ENV OPENJDK_VERSION ${openjdk.version}
+ENV OPENJDK_VERSION 8
 ENV GAE_IMAGE_NAME ${project.artifactId}
 ENV GAE_IMAGE_LABEL ${docker.tag.long}
 
